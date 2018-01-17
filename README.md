@@ -1,27 +1,47 @@
-# Ej2GridSample
+# Syncfusion_ShoppingCart-Universal_Testing
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.5.
+## Installing Packages
 
-## Development server
+Run the 'npm install' command to install all dependencies needed.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Building 
 
-## Code scaffolding
+### Development Mode
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run the 'npm run build' command to build the application in development mode locally. 
 
-## Build
+### Re-rendering Mode
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run the 'npm run build:ssr' command to build the application in re-render mode of universal. 
 
-## Running unit tests
+### Pre-render Mode
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run the 'npm run build:prerender' command to build the application in pre-render mode of universal.
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Serving
 
-## Further help
+### Development Mode
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Run the 'npm run start' command to serve the application in development mode locally. 
+
+### Re-rendering Mode
+
+Run the 'npm run serve:ssr' command to serve the application in re-render mode of universal. 
+
+### Pre-render Mode
+
+Run the 'npm run serve:prerender' command to serve the application in pre-render mode of universal.
+
+## Possible Errors
+
+### Package not found
+
+If you experience any kind of package not found error, I insist you kindly to install the required package as mentioned in the error message. 
+
+Possiblily express engine and http-server package might not be found in your machine. 
+
+### Browser Object Not Defined Errors
+
+If you experience any of browser objects window, document, navigator or location not defined error, just restrict the execution of the code conditionally. 
+
