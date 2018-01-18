@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
-import { DialogComponent } from '@syncfusion/ej2-ng-popups';
+// import { DialogComponent } from '@syncfusion/ej2-ng-popups';
 import { ListViewComponent } from '@syncfusion/ej2-ng-lists';
-import { GridComponent, CommandModel, EditService, EditSettingsModel } from '@syncfusion/ej2-ng-grids';
+// import { GridComponent, CommandModel, EditService, EditSettingsModel } from '@syncfusion/ej2-ng-grids';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { HttpHeaders } from '@angular/common/http/src/headers';
@@ -14,28 +14,28 @@ import { HttpParams } from '@angular/common/http';
 })
 
 export class AppComponent {
-  @ViewChild('modalDialog')
-  public modalDialog: DialogComponent;
+  // @ViewChild('modalDialog')
+  // public modalDialog: DialogComponent;
 
   @ViewChild('cartList')
   public cartList: ListViewComponent;
 
-  @ViewChild('cartGrid')
-  public cartGrid: GridComponent;
+  // @ViewChild('cartGrid')
+  // public cartGrid: GridComponent;
   public itemCount = 0;
-  public target = 'body';
-  public width = '75vw';
-  public height = '500px';
-  public header = `My Cart`;
-  public content = 'Your current software version is up to date.';
+  // public target = 'body';
+  // public width = '75vw';
+  // public height = '500px';
+  // public header = `My Cart`;
+  // public content = 'Your current software version is up to date.';
   //Initialize Button to open the modal Dialog
-  public buttons: Object[] = [{
-    click: this.placeOrder.bind(this),
-    buttonModel: { content: 'Place Order', cssClass: 'e-flat place-order-btn', isPrimary: true }
-  }];
-  public isModal: Boolean = true;
-  public animationSettings: Object = { effect: 'None' };
-  public hide: any;
+  // public buttons: Object[] = [{
+  //   click: this.placeOrder.bind(this),
+  //   buttonModel: { content: 'Place Order', cssClass: 'e-flat place-order-btn', isPrimary: true }
+  // }];
+  // public isModal: Boolean = true;
+  // public animationSettings: Object = { effect: 'None' };
+  // public hide: any;
 
   title = 'app';
 
@@ -44,11 +44,11 @@ export class AppComponent {
   public disableCart = this.itemCount === 0;
 
   public showOrderList = false;
-  public commands: CommandModel[] = this.commands = [{
-    type: 'delete',
-    buttonOption: { iconCss: 'e-icons e-delete', cssClass: 'e-flat' }
-  }];
-  public editSettings: EditSettingsModel = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'normal' };
+  // public commands: CommandModel[] = this.commands = [{
+  //   type: 'delete',
+  //   buttonOption: { iconCss: 'e-icons e-delete', cssClass: 'e-flat' }
+  // }];
+  // public editSettings: EditSettingsModel = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'normal' };
    public data: Object = [
     {
       socialMedia: 'Redmi 4 (Black, 16GB)',
@@ -130,15 +130,15 @@ export class AppComponent {
   public openOrder = function openorder() {
     // this.cartList.reRender();
     if (this.itemCount > 0) {
-      this.cartGrid.refresh();
-      this.modalDialog.show();
+      // this.cartGrid.refresh();
+      // this.modalDialog.show();
     }
 
   };
 
   placeOrder() {
     debugger;
-    this.modalDialog.hide();
+    // this.modalDialog.hide();
     this.showOrderList = true;
     const body = { name: 'Brad' };
     const headers = new Headers();
@@ -200,7 +200,7 @@ export class AppComponent {
   };
 
   public overlayClick = function overlayclick() {
-    this.modalDialog.hide();
+    // this.modalDialog.hide();
   };
 
 }

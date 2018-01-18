@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 import { ListViewModule } from '@syncfusion/ej2-ng-lists';
 import { ButtonAllModule } from '@syncfusion/ej2-ng-buttons';
-import { DialogAllModule } from '@syncfusion/ej2-ng-popups';
+// import { DialogAllModule } from '@syncfusion/ej2-ng-popups';
 import { GridAllModule } from '@syncfusion/ej2-ng-grids';
 import { AppComponent } from './app.component';
 
@@ -20,8 +20,8 @@ import { AppComponent } from './app.component';
     HttpClientModule,
     ListViewModule,
     ButtonAllModule,
-    DialogAllModule,
-    GridAllModule
+    // DialogAllModule,
+    // GridAllModule
   ],
   providers: [],
   bootstrap: [AppComponent]
