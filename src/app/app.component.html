@@ -16,7 +16,7 @@
     <div class="right-pane"></div>
     <div *ngIf="showProductList" class="content-pane">
       <div class="card card-2">
-        <ej-listview id='sample-list' [dataSource]='data' [fields]='fields' showHeader='true'>
+        <ej-listview id='sample-list' [dataSource]='data' headerTitle='Product List' [fields]='fields' showHeader='true'>
           <ng-template #template let-data="">
             <div class="litem-container">
               <div class="litem-image">
